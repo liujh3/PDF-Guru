@@ -1,9 +1,7 @@
 name: deploy
 run-name: ${{ github.actor }}
 on: 
-  push:
-    branches:
-      - dev
+  workflow_dispatch:
 env:
   VERRSION: "1.0.12"
 jobs:
