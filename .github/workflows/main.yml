@@ -50,7 +50,7 @@ jobs:
           cd $ROOT
           sudo apt-get update
           sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-dev build-essential upx
-          wails build -upx -ldflags "-s -w"
+          wails build -platform linux/arm64 -upx -ldflags "-s -w"
 
       - name: 上传Artifacts
         uses: actions/upload-artifact@v3
